@@ -42,6 +42,7 @@ import { Expense } from './models/expense.model';
           />
         }
       </main>
+      
     </div>
   `,
   styles: [`
@@ -71,7 +72,7 @@ export class AppComponent implements OnInit {
   errorMsg = '';
   successMsg = '';
 
-  constructor(private expenseService: ExpenseService) {}
+  constructor(private expenseService: ExpenseService) { }
 
   ngOnInit(): void {
     this.loadExpenses();
